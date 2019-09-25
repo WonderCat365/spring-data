@@ -13,7 +13,7 @@ public class CustomInterfaceImpl implements CustomInterface {
 
     @Override
     public Person someCustomMethod() {
-        String get = "FROM Person P WHERE P.id = 2";
+        String get = "FROM Person P WHERE P.id = 1";
         return (Person) entityManager.createQuery(get).getSingleResult();
     }
 }
